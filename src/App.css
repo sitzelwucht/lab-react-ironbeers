@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial';
+  letter-spacing: -0.05em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: black
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  color:grey;
+  text-decoration: none;
+}
+.menu {
+  background:rgb(90, 152, 233);
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu img {
+  filter: invert(88%) sepia(99%) saturate(2%) hue-rotate(215deg) brightness(116%) contrast(100%);
+  height: 80px;
+  padding: 20px;
+}
+
+.card {
+  margin: auto;
+}
+
+.beer-box {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  padding: 10px;
+  border-bottom: lightgray 1px solid;
+  margin: auto;
+}
+.beer-box h3, 
+h5,
+p {
+  padding: 15px;
+}
+
+
+.beer-box img {
+  height: 100px;
+  padding: 15px;
+}
+
+.single-beer {
+  width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 50px auto;
+
+}
+
+.single-beer img {
+  height: 250px;
+  margin-left: 45%
+}
+
+.beer-img {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.single-beer section {
+  display:flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.single-beer > div {
+  padding-bottom: 30px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.level {
+  font-size: 35px;
+}
+.grey {
+  color: rgb(151, 151, 151)
+}
+
+.bolded {
+  font-weight: bold
+}
+
+form {
+  width: 30%;
+  margin: 40px auto;
+}
+ 
+.add-form input {
+  border-radius: 30px;
+  
+}
+
+.add-form textarea {
+  border-radius: 25px;
+}
+
+.add-form button {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.add-form label {
+  font-weight: bold;
+}
+
+.search-box {
+  margin: 50px auto;
+  width: 40%;
+}
+
+.search-box input {
+  margin: 30px 30%
+}
+
+.spinner {
+  margin-top: 150px;
+  margin-left: 50%;
+
+}
+
+.description {
+  font-weight: bold;
+}
+
+.creator {
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  top: 0;
+  color: white
+}
+.beer-results {
+  background: rgb(224, 224, 224);
+  border-radius: 5px;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 50%;
+  display: flex;
+}
+.all-beers {
+  border: 2px solid rgb(224, 224, 224);
+  width: 50%;
+  border-radius: 5px;
+  margin: auto;
 }
