@@ -15,6 +15,9 @@ a:hover {
   background:rgb(90, 152, 233);
   display: flex;
   justify-content: center;
+  width: 100%;
+  /* position: fixed;
+  z-index: 2 */
 }
 
 .menu img {

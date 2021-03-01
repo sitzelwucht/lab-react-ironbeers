@@ -43,7 +43,7 @@ class App extends Component {
         this.setState({
           beers: [response.data, ...this.state.beers]
         }, () => {
-          this.props.history.push('/')
+          this.props.history.push('/beers')
         })
       })
       .catch(err => console.log(err))
@@ -102,7 +102,7 @@ class App extends Component {
           }} / >
 
           <Route path="/beers" render={() => {
-            return <AllBeers data={beers} inputChange={this.handleSearch} status={loading} results={results} msg={msg}/>
+            return <AllBeers data={beers} inputChange={this.handleSearch} loading={loading} results={results} msg={msg}/>
           }} / >
 
           <Route path="/random-beer" render={() => {
